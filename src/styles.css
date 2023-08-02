@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "monteseratt", sans-serif;
+}
+
+.app {
+  background-image: url("https://img.freepik.com/free-vector/meteorological-report-weather-forecast-concept_107791-13244.jpg?w=826&t=st=1690958486~exp=1690959086~hmac=ce8c8d0d8902a5554645b7db5abf664a3f1fd69e9da83e0e0881d53e5fe18874");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.3s ease-out;
+}
+
+.app.warm {
+  background-image: url("https://img.freepik.com/free-vector/people-autumn-park_23-2148609636.jpg?w=740&t=st=1690959445~exp=1690960045~hmac=8a499289d8e7757f30589a13041b5b55619ce592c03ccb29e85161f6f5552851");
+}
+
+.app.clear {
+  background-image: url("https://img.freepik.com/free-vector/urban-building-skyline-panoramic-illustration-with-copyspace_107791-1950.jpg?w=996&t=st=1690959572~exp=1690960172~hmac=f940847a5d8df68d42e166a0f887b2bebd223c9431655f921e57dc36d2a2aad5");
+}
+
+.app.thunderstorm {
+  background-image: url("https://img.freepik.com/free-vector/flat-background-monsoon-season_23-2150414911.jpg?w=740&t=st=1690959717~exp=1690960317~hmac=95ad4ec94d2c759f2dae060fe3a9630a75de06e19ef95c500bf774aaa1900ea1");
+}
+
+.app.rain {
+  background-image: url("https://img.freepik.com/free-vector/man-rain-design_1212-599.jpg?w=740&t=st=1690958768~exp=1690959368~hmac=7c929557d4a46a2f81eb8f49bec490efb034913cb957ab91df5dcab1c4dfeb17");
+}
+
+.app.cloud {
+  background-image: url("https://img.freepik.com/free-vector/cloudy-sky-blue-background_1284-64637.jpg?w=740&t=st=1690959002~exp=1690959602~hmac=1a778ede52b08621f04fb7fea00027f8b3d0435b79a01fa072a7f92664f1598a");
+}
+
+.typewriter-container {
+  font-family: "Luckiest Guy", sans-serif;
+  font-size: 50px;
+  letter-spacing: 4px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.75)
+  );
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.51);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+
+  font-size: 20px;
+  transition: o.4s ease;
+}
+
+.search-box .search-bar:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 750px;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.weather-box .weather {
+  font-size: 49px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.weather-description {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .search-box .search-bar {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .location-box .location {
+    font-size: 24px; /* Reduce font size for smaller screens */
+  }
+
+  .location-box .date {
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .weather-box .temp {
+    font-size: 60px; /* Reduce font size for smaller screens */
+  }
+
+  .weather-box .weather {
+    font-size: 30px; /* Reduce font size for smaller screens */
+  }
+
+  .weather-description {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+}
